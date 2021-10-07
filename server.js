@@ -25,7 +25,9 @@ app.get('/(:id)', function(req, res) {
     redisClient = redis.createClient(rtg.port, rtg.hostname);
     redisClient.auth(rtg.auth.split(":")[1]);
   } else {
+    console.log('else')
     redisClient = redis.createClient();
+    console.log(redisClient)
   }
 
 
