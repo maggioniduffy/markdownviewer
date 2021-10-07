@@ -27,7 +27,6 @@ app.get('/(:id)', function(req, res) {
   } else {
     console.log('else')
     redisClient = redis.createClient();
-    console.log(redisClient)
   }
 
 
